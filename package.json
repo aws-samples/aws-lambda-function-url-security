@@ -10,11 +10,17 @@
     "test": "jest"
   },
   "devDependencies": {
-    "aws-cdk": "2.24.1",
-    "jest": "^27.5.1"
+    "jest": "^26.4.2"
   },
   "dependencies": {
-    "aws-cdk-lib": "2.24.1",
-    "constructs": "^10.0.0"
+    "@aws-cdk/aws-amplify-alpha": "^2.20.0-alpha.0",
+    "@aws-sdk/client-amplify": "^3.95.0",
+    "@aws-solutions-constructs/aws-apigateway-lambda": "^2.7.0",
+    "aws-cdk-lib": "^2.24.1",
+    "constructs": "^10.0.0",
+    "fs": "^0.0.1-security",
+    "help": "^3.0.2",
+    "js-yaml": "^4.1.0",
+    "path": "^0.12.7"
   }
 }

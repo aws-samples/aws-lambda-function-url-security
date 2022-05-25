@@ -1,0 +1,19 @@
+
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm ci
+    build:
+      commands:
+        - echo "REACT_APP_CLOUDFRONT_LAMBDA_DISTRIBUTION_URL=$CLOUDFRONT_LAMBDA_DISTRIBUTION_URL" > .env 
+        - echo "REACT_APP_COGNITO_HOSTED_UI_URL=$COGNITO_HOSTED_UI_URL" >> .env
+        - npm run build
+  artifacts:
+    baseDirectory: build
+    files:
+      - "**/*"
+  cache:
+    paths:
+      - node_modules/**/*
