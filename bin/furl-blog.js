@@ -2,6 +2,7 @@
 
 const cdk = require('aws-cdk-lib');
 const { FurlBlogStack } = require('../lib/furl-blog-stack');
+const { AwsSolutionsChecks } = require('cdk-nag');
 
 const app = new cdk.App();
 new FurlBlogStack(app, 'FurlBlogStack', {
@@ -19,3 +20,5 @@ new FurlBlogStack(app, 'FurlBlogStack', {
 
   /* For more information, see https://docs.aws.amazon.com/cdk/latest/guide/environments.html */
 });
+
+cdk.Aspects.of(app).add(new AwsSolutionsChecks());
