@@ -50,26 +50,28 @@ To deploy this solution, you need the following pre-requisites on the client mac
 
 
 4. Execute the following command to start deployment AWS resources required for the solution
-
+```
     $ cdk deploy 
 
     Note: 
     •	optionally pass in the --profile argument as / if needed
     •	The deployment can take up-to 15 minutes
+```
+
 5. Once the deployment completes, the output will look similar to this:
+    
+    ```
     ✨  Deployment time: 296.18s
 
     Outputs:
     FurlBlogStack.amplifyAppUrl = https://main.d2ve******.amplifyapp.com
-
     FurlBlogStack.cognitoHostedUiUrl = https://lambda-furl-******-us-east-1.auth.us-east-1.amazoncognito.com/login?client_id=*******i&response_type=code&redirect_uri=https://main.d2ve******.amplifyapp.com
-
     FurlBlogStack.lambdaFunctionUrl = https://******.lambda-url.us-east-1.on.aws/
-    
     Stack ARN:
     arn:aws:cloudformation:us-east-1:******:stack/FurlBlogStack/xxxxx-dc58-11ec-xxxx-xxxxxxxx
 
     ✨  Total time: 297.81s
+    ```
 6. Open the first url from the output ( amplifyAppUrl ) in your browser. This is the url for the Web Page we’ll be using for the demo
 
     Note: if you do not see “Welcome to ComputeBlog” page with a Sign In and Continue buttons – very likely the amplify app is in “build” stage and the website is being published. You can verify this by navigating to the Amplify app from aws console. Retry in about 5 minutes if your app is being built.
@@ -79,9 +81,10 @@ To deploy this solution, you need the following pre-requisites on the client mac
 # Cleaning Up
 
 You may delete the resources provisioned by utilizing the starter kits. You can do this by running the following command.
-
+```
     $ cdk destroy 
 
         Note: 
         •	optionally pass in the --profile argument as / if needed
         •	The deletion can take up-to 15 minutes
+```
