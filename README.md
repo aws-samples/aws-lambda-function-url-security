@@ -32,14 +32,16 @@ To deploy this solution, you need the following pre-requisites on the client mac
 
 1. Clone / Download this GitHub repository ( uncompress if you downloaded an archive )
 2. Execute the following commands:
-
+    ```
     $ cd <full path of the directory where the GitHub repo was cloned to>
     $ npm install
     $ cd lib/lambda
     $ npm install
+    ```
 3. Execute the following command to create the S3 bucket and IAM roles that CDK will use to provision the AWS resources.
-
+    ```
     $ cdk bootstrap
+    ```
 
     Notes: 
     1. you may optionally pass --profile argument to this command if you have configured multiple aws profiles for aws CLI
@@ -50,13 +52,13 @@ To deploy this solution, you need the following pre-requisites on the client mac
 
 
 4. Execute the following command to start deployment AWS resources required for the solution
-```
+    ```
     $ cdk deploy 
 
     Note: 
     •	optionally pass in the --profile argument as / if needed
     •	The deployment can take up-to 15 minutes
-```
+    ```
 
 5. Once the deployment completes, the output will look similar to this:
     
