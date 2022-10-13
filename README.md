@@ -61,8 +61,11 @@ To deploy this solution, you need the following pre-requisites on the client mac
 
     Outputs:
     FurlBlogStack.amplifyAppUrl = https://main.d2ve******.amplifyapp.com
+
     FurlBlogStack.cognitoHostedUiUrl = https://lambda-furl-******-us-east-1.auth.us-east-1.amazoncognito.com/login?client_id=*******i&response_type=code&redirect_uri=https://main.d2ve******.amplifyapp.com
+
     FurlBlogStack.lambdaFunctionUrl = https://******.lambda-url.us-east-1.on.aws/
+    
     Stack ARN:
     arn:aws:cloudformation:us-east-1:******:stack/FurlBlogStack/xxxxx-dc58-11ec-xxxx-xxxxxxxx
 
