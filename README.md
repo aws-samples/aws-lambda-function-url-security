@@ -31,7 +31,7 @@ To deploy this solution, you need the following pre-requisites on the client mac
 # Deploy the demo solution:
 
 1. Clone / Download this GitHub repository ( uncompress if you downloaded an archive )
-2. Execute the following commands:
+2. Execute the following commands in Terminal ( Mac OS ) or PowerShell ( Windows ):
     ```
     $ cd <full path of the directory where the GitHub repo was cloned to>
     $ npm install
