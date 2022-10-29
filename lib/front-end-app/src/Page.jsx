@@ -1,8 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import './App.css'
-
-import logo from './AWS_logo_RGB.svg'
-//import logo from './logo.svg'
 const Page = () =>
 
 {
@@ -18,7 +15,10 @@ const Page = () =>
 
     setBody(<div className="App">
                         <header className="App-header">
-                            <img src={logo} className="App-logo" alt="aws" />
+                           
+                            <div background="#FF9900" >
+                              <center color="white">AWS</center>
+                            </div>
                             <p>Welcome to aws ComputeBlog</p>
                          </header>
                          <body className="App-body">
@@ -60,7 +60,10 @@ const Page = () =>
         if(Continue) {
         setBody (<div className="App">
         <header className="App-header">
-            <img src={logo} className="App-logo" alt="aws" />
+        
+                            <div background="#FF9900" >
+                              <center color="white">AWS</center>
+                            </div>
             <p>Welcome to aws ComputeBlog</p>
          </header>
          <body className="App-body">
@@ -115,7 +118,10 @@ const Page = () =>
             document.cookie="code="+ url.substring(6,url.length);
             setBody(<div className="App">
                         <header className="App-header">
-                        <img src={logo} className="App-logo" alt="aws" />
+                        
+                            <div background="#FF9900" >
+                              <center color="white">AWS</center>
+                            </div>
                         <p>Welcome to aws ComputeBlog</p>
                         </header>
                         <body className="App-body">
@@ -134,7 +140,9 @@ const Page = () =>
             //Everytime page loads, set the body of the page as the page that shows the login and contineu buttons
             setBody(<div className="App">
                        <header className="App-header">
-                           <img src={logo} className="App-logo" alt="aws" />
+                            <div background="#FF9900" >
+                              <center color="white">AWS</center>
+                            </div>
                            <p>Welcome to aws ComputeBlog</p>
                         </header>
                         <body className="App-body">
