@@ -1,6 +1,8 @@
-# Overview
+# Securing Lambda Function URL
 
-This repository is to support the AWS Compute Blog outlined here:
+This repository is to support the AWS Compute Blog - Securing Lambda function URLs using Cognito, CloudFront and WAF
+
+## Overview
 
 This respository contains mainly AWS CDK Deployment code that creates AWS resources in your AWS account. The CDK code is in the /bin and /lib directories.
 
@@ -9,7 +11,7 @@ The /lib directory also contains three sub-projects that will be used for the CD
     b. /lib/lambda-cognito-trigger contains the Lambda Function code that will be attached to the Cognito User Pool as a "pre sign-up trigger". This Function auto approves a user in Cognito User Pool when the user goes through the "sign up" flow in the front end website
     c. /lib/lambda contains the main Lambda Function code on which the Function URL will be enabled
 
-# Pre-requisites: 
+## Pre-requisites: 
 To deploy this solution, you need the following pre-requisites on the client machine:
 1.	The AWS Command Line Interface (CLI) installed and configured for use.
     Refer this link to install the CLI. https://aws.amazon.com/cli/
@@ -28,7 +30,7 @@ To deploy this solution, you need the following pre-requisites on the client mac
     Refer this link to install AWS CDK V2: https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_install
 
 
-# Deploy the demo solution:
+## Deploy the demo solution:
 
 1. Clone / Download this GitHub repository ( uncompress if you downloaded an archive )
 2. Execute the following commands in Terminal ( Mac OS ) or PowerShell ( Windows ):
@@ -80,7 +82,7 @@ To deploy this solution, you need the following pre-requisites on the client mac
 
 
 
-# Cleaning Up
+## Cleaning Up
 
 You may delete the resources provisioned by utilizing the starter kits. You can do this by running the following command.
 ```
@@ -90,3 +92,14 @@ You may delete the resources provisioned by utilizing the starter kits. You can 
         •	optionally pass in the --profile argument as / if needed
         •	The deletion can take up-to 15 minutes
 ```
+
+
+## Security
+
+See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+
+## License
+
+This library is licensed under the MIT-0 License. See the LICENSE file.
+
+
