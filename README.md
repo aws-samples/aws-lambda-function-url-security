@@ -29,17 +29,18 @@ To deploy this solution, you need the following pre-requisites on the client mac
 3.	The AWS CDK V2 is installed
     Refer this link to install AWS CDK V2: https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_install
 4. Execute the following commands to create the necessary AWS resources (S3 bucket, IAM role/s etc) that AWS CDK will use to provision AWS resources for the sample solution
+
     ```
     $ cdk bootstrap
-
     ```
 
-Note: you may optionally pass --profile argument to this command if you have configured multiple AWS profiles for your AWS CLI.
+    Note: you may optionally pass --profile argument to this command if you have configured multiple AWS profiles for your AWS CLI.
 
     For ex:
     ```
      cdk bootstrap –profile myFirstProfile
-     ```
+    ```
+    
     Where myFirstProfile refers to a profile name under ~/.aws/config file. 
 
 
