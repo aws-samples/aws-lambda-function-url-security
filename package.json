@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@aws-cdk/aws-amplify-alpha": "^2.20.0-alpha.0",
-    "@aws-sdk/client-amplify": "^3.95.0",
+    "@aws-sdk/client-amplify": "^3.350.0",
     "@aws-solutions-constructs/aws-apigateway-lambda": "^2.7.0",
     "aws-cdk-lib": "^2.24.1",
     "cdk-nag": "^2.14.15",
